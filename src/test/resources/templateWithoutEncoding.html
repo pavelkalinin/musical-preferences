@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="row">
+    <#list albums as album>
+        <div class="3u tooltip music">
+            <a href="${album.source}" target="_blank" class="image fit cover">
+                <span>${album.artist} • ${album.name}</span>
+                <img src="${album.cover}" alt="${album.description}"/>
+            </a>
+        </div>
+    </#list>
+</div>
+</body>
+</html>
